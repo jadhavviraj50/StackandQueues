@@ -8,7 +8,7 @@ namespace LinkedListStackAndQueue
 
             Console.WriteLine("-----------Welcome to Linked List Program----------");
             bool end = true;
-            Console.WriteLine("\n1.StackPush\n2.StackPickPop\n3.Enqueue\n4.End Of Program ");
+            Console.WriteLine("\n1.StackPush\n2.StackPickPop\n3.Enqueue\n4.Dequeue\n5.End Of Program ");
             while (end)
             {
                 LinkedListStack stack = new LinkedListStack();
@@ -36,6 +36,13 @@ namespace LinkedListStackAndQueue
                         queue.Display();
                         break;
                     case 4:
+                        queue.Enqueue(70);
+                        queue.Enqueue(30);
+                        queue.Enqueue(56);
+                        queue.Dequeue();
+                        queue.Display();
+                        break;
+                    case 5:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
